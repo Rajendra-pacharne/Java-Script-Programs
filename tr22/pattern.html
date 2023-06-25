@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patterns </title>
+</head>
+<body>
+    <h1> Pattern </h1>
+    <p id="pat"></p>
+   <p id="pat2"></p>
+   <p id="pat3"></p>
+   <p id="pat4"></p>
+    <script>
+         var s="",s2='',s3='',s4='';
+        for(let i=1;i<=5;i++)
+        {
+            for(let j=1;j<=i;j++)
+            {
+                s=s.concat(j);
+                s2=s2.concat("*");
+                s3=s3.concat(i);
+                           }
+
+         s=s.concat('<br>');
+         s2=s2.concat('<br>');
+         s3=s3.concat('<br>');
+        
+        }
+        document.getElementById('pat').innerHTML=s;
+        document.getElementById('pat2').innerHTML=s2;
+        document.getElementById('pat3').innerHTML=s3;
+        
+
+        for(let i=1;i<=5;i++)
+        {
+            for(let j=i+1;j<5;j++)
+            {
+                s4=s4.concat("*");
+
+            }
+            s4=s4.concat('<br>');
+        }
+
+        document.getElementById('pat4').innerHTML=s4;
+            
+        /*
+   * 
+  * * 
+ * * * 
+* * * *
+        */
+    </script>
+</body>
+</html>

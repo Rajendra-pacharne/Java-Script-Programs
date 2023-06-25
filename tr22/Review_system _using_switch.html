@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review system using switch</title>
+</head>
+<body>
+    <script>
+        /*
+        5– Outstanding
+4– Exceeds Expectations
+3- Meets Expectations
+2- Needs Improvement
+1- Unacceptable
+"5" - excellent
+"4" - very good
+"3" - average
+"2" - Needs Improvement
+"1" - Unacceptable
+        */
+
+      let n=  prompt("Enter Rating");
+    
+      if(n==1)
+      {
+        var rate=parseInt(prompt("Rating"));
+      }
+      else{
+        var rate=prompt("Rating");
+      }
+        document.write(typeof(rate))
+        switch(rate)
+        {
+            case 1:
+            case "1":
+            document.write("Unacceptable");
+                break;
+            case 2:
+            case '2':
+                document.write("Needs Improvement");
+                break;
+            case 3:
+                document.write("Meets Expectations");
+                break;
+            case '3':
+            document.write("average");
+            break;
+            case 4:
+                document.write("Exceeds Expectations");
+                break;
+            case '4':
+                document.write("very good");
+                break;
+            case 5:
+                document.write("Outstanding")
+                break;
+            case '5':
+                document.write("excellent")
+                break;
+            default:
+                document.write("Check options ");
+            
+        }
+
+
+//         1. Which day of the week? 
+// 2. Number of days in the month?
+// 3. Calculator
+
+    </script>
+</body>
+</html>

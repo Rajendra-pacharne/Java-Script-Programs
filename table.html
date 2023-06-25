@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 16/2/23</title>
+    <script>
+      function mymessage()
+      {
+        document.getElementById('m1').innerHTML="Message 1";
+      }
+      function mymessage2()
+      {
+        document.getElementById('m1').innerHTML="Message 1.1";
+      }
+      window.onload=function()
+      {
+        mymessage();
+        mymessage2();
+      }
+    </script>
+</head>
+<body>
+    <table align="center" border="bolt">
+      Table 
+        <tr>
+          <td>Message Present in header tag</td>
+          <td id="m1"></td>
+        </tr>
+        <tr>
+          <td>Message Present in body tag</td>
+          <td id="m2"></td>
+        </tr>
+        <tr>
+          <td>Message called using external file -1</td>
+          <td id="m3"></td>
+        </tr>
+        <tr>
+            <td>Message called using external file -2</td>
+            <td id="m4"></td>
+          </tr>
+          <tr>
+            <td>Message called using external file -3</td>
+            <td id="m5"></td>
+          </tr>
+      </table>
+      <script>
+        document.getElementById('m2').innerHTML='Message 2';
+      </script>
+      <script>
+      //   window.onload=function()
+      // {
+      //   m1();
+      //   m2();
+      //   m3();
+      //   m4();
+      //   m5();
+      // }
+
+      </script>
+<script src="./m3.js"></script>
+<script src="./m4.js"></script>
+<script src="./m5.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let  a=  parseInt(prompt("Enter Value Of A"));
+        let b = parseInt(prompt("Enter Value Of B"));
+        let c = parseInt(prompt("Enter Value Of C"));
+        let d=a+b+c;
+        // document.write(d)
+        // console.log(d)
+        // if(d=180)
+        // {
+        //     alert("its a valid triangle");
+        // }
+        // else{
+        //     alert("not valid");
+        // }
+
+            // if(a==b||b==c ||c==a)
+            // {
+            //     alert("Equilateral Triangle")
+            // }
+            // else if(a==b&&b==c&&c==a)
+            // {
+            //     alert("Issoceles Triangle")
+            // }
+            // else{
+            //     alert("scaler triangle ")
+            // }
+
+//         if (a + b > c && a + c > b && b + c > a) {
+//     document.write("valid")
+//   } else {
+//    document.write("not valid")
+//   }
+
+// (x + y <= z || x + z <= y || y + z <= x)
+
+(a + b > c || a + c > b || b + c > a)? (a==b||b==c||c==a)? document.write("Issoceles Triangle"): (a==b&&b==c&&c==a)? document.write("Equilateral Triangle"): document.write("scaler triangle "):document.write("not a valid")
+
+        </script>
+</body>
+</html>
