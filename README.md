@@ -1,6 +1,6 @@
 # Java-Script-Programs
 
-Basic Java-Script-Programs
+
 JavaScript (JS) is a high-level, interpreted programming language that is primarily used for web development. 
 It allows you to add interactivity and dynamic behavior to websites, making them more engaging for users. 
 JS can run on both the client-side (in a web browser) and the server-side (using Node.js).
